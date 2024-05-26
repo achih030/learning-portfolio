@@ -1,7 +1,7 @@
-# Learning Experience Summarizer
+# Learning Portfolio Summarizer
 
 ## Overview
-The Learning Experience Summarizer is a tool designed to extract text from images and generate a summary of learning experiences based on that text. It utilizes the Google Cloud Vision API for text extraction and OpenAI's GPT-3.5 model for summarization.
+The Learning Portfolio Summarizer is a tool designed to extract text from images and generate a summary of learning experiences based on that text. It utilizes the Google Cloud Vision API for text extraction and OpenAI's GPT-3.5 model for summarization.
 
 ## Features
 - Extracts text from image files (PNG, JPG, JPEG).
