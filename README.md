@@ -12,7 +12,8 @@ The Learning Portfolio Summarizer is a tool designed to extract text from images
 1. Clone this repository to your local machine.
 2. Install the required dependencies:
     ```bash
-    pip install -r requirements.txt
+    !pip install openai==0.28
+    !pip install google-cloud-vision
     ```
 3. Set up API keys for Google Cloud Vision and OpenAI. Replace `google_cloud.json` with your Google Cloud Vision service account key and `open_api_key` with your OpenAI API key in the `main.py` file.
 
