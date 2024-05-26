@@ -52,13 +52,6 @@
 
 ## 依賴套件
 
-- [Pillow](https://python-pillow.org/)：用於圖片處理。
-- [pytesseract](https://github.com/madmaze/pytesseract)：用於文本提取。
-- [tk](https://wiki.python.org/moin/TkInter)：用於圖形用戶界面。
 - [OpenAI](https://pypi.org/project/openai/)：OpenAI的GPT-3模型。
 - [google-cloud-vision](https://pypi.org/project/google-cloud-vision/)：Google Cloud Vision API。
-
-## 貢獻
-
-如果您有任何建議或改進意見，請隨時向我們提出問題或發送拉取請求。我們歡迎各種貢獻！
 
