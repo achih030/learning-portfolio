@@ -1,6 +1,6 @@
 # 學習歷程總結工具
 
-歡迎使用學習歷程總結工具！這個工具可以從圖片中提取文本，並使用人工智慧模型對提取的文本進行總結，讓您輕鬆地總結學習歷程或其他文字內容。
+歡迎使用學習歷程總結工具！這個工具可以從圖片中提取文本，並使用OPEN AI模型對提取的文本進行總結，讓您輕鬆地總結學習歷程或其他文字內容。
 
 ## 如何使用
 
@@ -17,7 +17,7 @@
 2. **設定API金鑰**：
 
    - 設定OpenAI API金鑰：將 `open_api_key` 替換為您的OpenAI API金鑰。
-   - 設定Google Cloud Vision API服務帳戶密钥文件路径：將 `google_cloud.json` 替換為您的Google Cloud Vision API服務帳戶密钥文件的路径。
+   - 設定Google Cloud Vision API服務帳戶密钥文件路径：將 `google_cloud.json` 替換為您的Google Cloud Vision API服務帳戶密钥文件的路徑。
 
 3. **執行主程式**：
 
