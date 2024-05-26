@@ -1,57 +1,29 @@
-# 學習歷程總結工具
+# Learning Experience Summarizer
 
-歡迎使用學習歷程總結工具！這個工具可以從圖片中提取文本，並使用OPEN AI模型對提取的文本進行總結，讓您輕鬆地總結學習歷程或其他文字內容。
+## Overview
+The Learning Experience Summarizer is a tool designed to extract text from images and generate a summary of learning experiences based on that text. It utilizes the Google Cloud Vision API for text extraction and OpenAI's GPT-3.5 model for summarization.
 
-## 如何使用
+## Features
+- Extracts text from image files (PNG, JPG, JPEG).
+- Summarizes learning experiences based on extracted text.
+- Supports generating summaries in Chinese language.
 
-1. **安裝必要的套件**：
-
-    開啟終端，執行以下指令以安裝所需的Python套件：
-
+## Installation
+1. Clone this repository to your local machine.
+2. Install the required dependencies:
     ```bash
-    !pip install openai==0.28
-    !pip install google-cloud-vision
+    pip install -r requirements.txt
     ```
+3. Set up API keys for Google Cloud Vision and OpenAI. Replace `google_cloud.json` with your Google Cloud Vision service account key and `open_api_key` with your OpenAI API key in the `main.py` file.
 
-2. **設定API金鑰**：
+## Usage
+1. Run the script `main.py`.
+2. Follow the prompts to upload image files containing text.
+3. The tool will extract text from the images and generate a summary of learning experiences.
+4. The summary will be displayed in the console.
 
-   - 設定OpenAI API金鑰：將 `open_api_key` 替換為您的OpenAI API金鑰。
-   - 設定Google Cloud Vision API服務帳戶密钥文件路径：將 `google_cloud.json` 替換為您的Google Cloud Vision API服務帳戶密钥文件的路徑。
+## Contributing
+Contributions are welcome! If you have any ideas for improvements or find any issues, feel free to open an issue or submit a pull request.
 
-3. **執行主程式**：
-
-   在主程式的最後部分，執行以下指令：
-
-    ```python
-    if __name__ == "__main__":
-        file_paths = upload_files()
-        if not file_paths:
-            print("未上傳任何文件。")
-        else:
-            print(f"已上傳{len(file_paths)}個文件。")
-            print("正在提取文本...")
-            extracted_texts = extract_texts_from_files(file_paths)
-            print("正在總結學習歷程...")
-            summary = summarize_texts(extracted_texts)
-            print("\n學習歷程總結：")
-            print(summary)
-            print("正在刪除已上傳的文件...")
-            delete_files(file_paths)
-    ```
-
-## 功能
-
-- **文件上傳**：用戶可以通過文件上傳功能將要處理的圖片文件上傳到工具中。
-- **文本提取**：工具會從上傳的圖片文件中提取文本信息。
-- **學習歷程總結**：提取的文本將被送至OpenAI的GPT-3.5模型進行總結，生成一段大約500至1000個中文字的流暢的學習歷程與心得。
-- **文件刪除**：總結完成後，上傳的文件將被自動刪除，保證用戶隱私安全。
-
-## 注意事項
-
-- 目前僅支持PNG、JPG和JPEG格式的圖片文件。
-
-## 依賴套件
-
-- [OpenAI](https://pypi.org/project/openai/)：OpenAI的GPT-3模型。
-- [google-cloud-vision](https://pypi.org/project/google-cloud-vision/)：Google Cloud Vision API。
-
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
