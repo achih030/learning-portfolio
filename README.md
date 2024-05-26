@@ -9,7 +9,6 @@
     開啟終端，執行以下指令以安裝所需的Python套件：
 
     ```bash
-    !pip install pillow pytesseract tk
     !pip install openai==0.28
     !pip install google-cloud-vision
     ```
