@@ -15,16 +15,14 @@ The Learning Portfolio Summarizer is a tool designed to extract text from images
     !pip install openai==0.28
     !pip install google-cloud-vision
     ```
-3. Set up API keys for Google Cloud Vision and OpenAI. Replace `google_cloud.json` with your Google Cloud Vision service account key and `open_api_key` with your OpenAI API key in the `main.py` file.
+3. Set up API keys for Google Cloud Vision and OpenAI. Replace `google_cloud.json` with your Google Cloud Vision service account key and `open_api_key` with your OpenAI API key in the file.
 
 ## Usage
-1. Run the script `main.py`.
+1. Run the script.
 2. Follow the prompts to upload image files containing text.
 3. The tool will extract text from the images and generate a summary of learning experiences.
 4. The summary will be displayed in the console.
 
-## Contributing
-Contributions are welcome! If you have any ideas for improvements or find any issues, feel free to open an issue or submit a pull request.
-
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+## APIs Used
+- **Google Cloud Vision API**: Used for text extraction from image files. This API provides powerful optical character recognition (OCR) capabilities, enabling the extraction of text content from images with high accuracy.
+- **OpenAI API (GPT-3.5)**: Utilized for text summarization. OpenAI's GPT-3.5 model is a state-of-the-art natural language processing model capable of generating human-like text responses. It powers the summarization component of the Learning Portfolio Summarizer, allowing it to produce coherent and contextually relevant summaries of learning experiences.
